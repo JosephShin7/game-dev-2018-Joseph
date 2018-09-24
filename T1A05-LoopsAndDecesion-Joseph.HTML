@@ -1,0 +1,82 @@
+                 <input type=text id="myText01" value=50>
+                 <input type=button value="Click me!(might crash)" onclick="{
+                 document.getElementById('myDiv01').innerHTML = ''
+ 	         for (let x=0; x < document.getElementById('myText01').value; x++){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        if(x% 2 == 0){
+                 document.getElementById('myDiv01').innerHTML += '<font color=blue> This Number Is A Even Number, </font><br> '   }
+			
+		        if(x > 10){
+                 document.getElementById('myDiv01').innerHTML += '<font color=red>This Number Is larger Than Ten, </font><br>'   }	
+
+		        if(x < 10){
+                 document.getElementById('myDiv01').innerHTML += '<font color=red>This Number Is Less Than Ten, </font><br>'   }
+
+		        if(x == 7){
+                 document.getElementById('myDiv01').innerHTML += '<font color=yellow>This Number Is A Lucky Number, </font><br>'   }
+
+		        if(x < 100){
+                 document.getElementById('myDiv01').innerHTML += '<font color=grey>This Number Is Less Than Hundred, </font><br>'   }
+
+		        if(x > 100){
+                 document.getElementById('myDiv01').innerHTML += '<font color=grey>This Number Is larger Than Hundred, </font><br>'   }
+			
+		   		
+		 
+		         if((x == 10)&&(x == 20)){
+                 document.getElementById('myDiv01').innerHTML += '<font color=yellow>This Number Has Zero In It, </font><br>'   }
+
+			 if((x == 3)||(x == 6)){
+                 document.getElementById('myDiv01').innerHTML += '<font color=yellow>This Number Is Either 3 Or 6, </font><br>'   }
+
+			  if(x% 2 == !0){
+                 document.getElementById('myDiv01').innerHTML += '<font color=blue> This Number Is A Odd Number, </font><br> '   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>` } }">
+                 <div id="myDiv01">...</div>
+
+				
+
+	
