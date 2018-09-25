@@ -1,18 +1,7 @@
-                 <input type=text id="myText01" value=50>
-                 <input type=button value="Click me!(might crash)" onclick="{
+                 <input type=text id="myText01" value=201>
+                 <input type=button value="Click This Button To Temporary Freeze Your PC" onclick="{
                  document.getElementById('myDiv01').innerHTML = ''
  	         for (let x=0; x < document.getElementById('myText01').value; x++){
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -50,20 +39,8 @@
                  document.getElementById('myDiv01').innerHTML += '<font color=blue> This Number Is A Odd Number, </font><br> '   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     	 		  if((x!== 10)||(x!== 0)){
+                 document.getElementById('myDiv01').innerHTML += '<font color=pink>This Number Does Not have 0 In It, </font><br>'   }
 
 
 
@@ -75,8 +52,7 @@
 
 
                  document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>` } }">
-                 <div id="myDiv01">...</div>
-
-				
+                 <div id="myDiv01"><font color=green>Numbers</font> <font color=blue> Will</font><font color=lightblue> Print </font> <font color=red> Here</font></div>
+	
 
 	
