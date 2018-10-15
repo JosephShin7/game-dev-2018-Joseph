@@ -1,59 +1,54 @@
-<h2 align=center> Functions By Joseph:3 <h/2>
+<script>
+
+function myFun01(){
+	document.getElementById('myDiv01').innerHTML = `${document.getElementById('myText01').value} + ${document.getElementById('myText01').value} = `+
+(parseFloat(document.getElementById('myText01').value) + 
+parseFloat(document.getElementById('myText01').value)) }
+	  
+
+     
+function myFun() {
+ document.getElementById('myDiv02').innerHTML =  ` `+document.getElementById('myText02').value+` x `+document.getElementById('myText02').value+` = ` 
+                              + document.getElementById('myText02').value * document.getElementById('myText02').value }
+
+
+function myFun03(){
+	document.getElementById('myDiv03').innerHTML = `${document.getElementById('myText03').value} - ${document.getElementById('myText03').value} = `+
+(parseFloat(document.getElementById('myText03').value) - 
+parseFloat(document.getElementById('myText03').value)) }
+	  
 
 
 
 
 
 
+
+</script>
+
+
+
+<h2 align=center> Functions By Joseph:3 <h/2> <br> 
+Added couple more functions for re-mark:) <br>
 
 
 	
-				<input type=text value=3 id="myText01">
-				   
-				<input type=button value="Run function myFun" onclick=  "{         
 
-				       
-					function myFun() {
-					 document.getElementById('myDiv01').innerHTML =  ` `+document.getElementById('myText01').value+` x `+document.getElementById('myText01').value+` = ` 
-                                     	
-               		
-                         		
-				       + document.getElementById('myText01').value *
-					 document.getElementById('myText01').value }
-					
-					myFun()
 
-									
+<input type=text value=25 id="myText01">
+<input type=button value="Addition" onclick=  "{myFun01()}">     
+<div id="myDiv01">Awnser</div>
 
 
 
+<input type=text value=45 id="myText02">
+<input type=button value="multiplecation" onclick=  "{myFun()}">     
+<div id="myDiv02">Awnser</div>
 
 
 
+<input type=text value=233565645634 id="myText03">
+<input type=button value="Subtraction" onclick=  "{myFun03()}">     
+<div id="myDiv03">Awnser</div>
 
 
-
-
-
-
-
-
-
-
-
-                      
-
-
-
-
-
-
-
-
-
-
-
-
- }">
-
-<div id="myDiv01">...</div>
