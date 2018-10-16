@@ -1,23 +1,26 @@
 <script>
 
 function myFun01(){
-	document.getElementById('myDiv01').innerHTML = `${document.getElementById('myText01').value} + ${document.getElementById('myText01').value} = `+
+	document.getElementById('myDiv01').innerHTML = `${document.getElementById('myText01').value} + ${document.getElementById('myText06').value} = `+
 (parseFloat(document.getElementById('myText01').value) + 
-parseFloat(document.getElementById('myText01').value)) }
+parseFloat(document.getElementById('myText06').value)) }
 	  
 
      
 function myFun() {
- document.getElementById('myDiv02').innerHTML =  ` `+document.getElementById('myText02').value+` x `+document.getElementById('myText02').value+` = ` 
-                              + document.getElementById('myText02').value * document.getElementById('myText02').value }
+ document.getElementById('myDiv02').innerHTML =  ` `+document.getElementById('myText02').value+` x `+document.getElementById('myText07').value+` = ` 
+                              + document.getElementById('myText02').value * document.getElementById('myText07').value }
 
 
 function myFun03(){
-	document.getElementById('myDiv03').innerHTML = `${document.getElementById('myText03').value} - ${document.getElementById('myText03').value} = `+
+	document.getElementById('myDiv03').innerHTML = `${document.getElementById('myText03').value} - ${document.getElementById('myText05').value} = `+
 (parseFloat(document.getElementById('myText03').value) - 
-parseFloat(document.getElementById('myText03').value)) }
+parseFloat(document.getElementById('myText05').value)) }
 	  
 
+function myFun04() {
+ document.getElementById('myDiv04').innerHTML =  ` `+document.getElementById('myText04').value+` / `+document.getElementById('myText08').value+` = ` 
+                              + document.getElementById('myText04').value % document.getElementById('myText08').value }
 
 
 
@@ -35,20 +38,25 @@ Added couple more functions for re-mark:) <br>
 	
 
 
-<input type=text value=25 id="myText01">
+<input type=text value=50 id="myText01"><input type=text value=20 id="myText06">
 <input type=button value="Addition" onclick=  "{myFun01()}">     
 <div id="myDiv01">Awnser</div>
 
 
 
-<input type=text value=45 id="myText02">
-<input type=button value="multiplecation" onclick=  "{myFun()}">     
+<input type=text value=50 id="myText02"><input type=text value=20 id="myText07">
+<input type=button value="multiplication" onclick=  "{myFun()}">     
 <div id="myDiv02">Awnser</div>
 
 
 
-<input type=text value=233565645634 id="myText03">
+<input type=text value=50 id="myText03"><input type=text value=20 id="myText05">
 <input type=button value="Subtraction" onclick=  "{myFun03()}">     
 <div id="myDiv03">Awnser</div>
+
+
+<input type=text value=50 id="myText04"><input type=text value=20 id="myText08">
+<input type=button value="Division" onclick=  "{myFun04()}">     
+<div id="myDiv04">Awnser*(note only shows remainders. I believe you can do the rest.)</div>
 
 
