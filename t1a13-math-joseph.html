@@ -50,3 +50,28 @@
 }"> <br> <div id="myOut4"></div> <br>
 
 
+	<input id="myIn5" type=text value="50.50">
+	<input type=button value="Round" onclick="{
+	
+	document.getElementById('myOut5').innerHTML = 
+		Math.round(parseFloat(document.getElementById('myIn5').value))
+
+}"> <br> <div id="myOut5"></div> <br>
+
+
+	50.50, 12345, 1, -1
+	<input type=button value="Maximum Number" onclick="{
+	
+	document.getElementById('myOut6').innerHTML = 
+		Math.max(50.50, 12345, 1, -1)}">
+        <input type=button value="Minimum Number" onclick="{
+	
+	document.getElementById('myOut6').innerHTML = 
+		Math.min(50.50, 12345, 1, -1)}">
+
+ <br> <div id="myOut6"></div> <br>
+
+
+
+
+

@@ -1,64 +1,69 @@
 
 
+<h2 align=center>If Else Statements by Joseph</h2>
+<input id="myIn" type=text value=13>
+<input type=button value="Greater 3 or Less than3?" onclick="{
+   document.getElementById('myOut').innerHTML = ''
 
-	<h2 align=center> if else statements by joseph </h2>
-<input id="myIn" type=text value=2>
-<input type=button value="decesions if statement" onclick="{
-	document.getElementById('myOut').innerHTML = ''
-
-x = document.getElementById('myIn').value
-	if ( x != 3) {
-	document.getElementById('myOut').innerHTML +=
-		'This Number Is Not A 3<br>'
-
-	}else {
-	document.getElementById('myOut').innerHTML +=
-		'This is 3<br>' } 
-
-
-
-x = document.getElementById('myIn').value
-	if ( x == 3) {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is 3 <br>'
-
-	}else {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is is not 3<br>' } 
+  if ( document.getElementById('myIn').value < 3){
+      document.getElementById('myOut').innerHTML += 
+           'wow the number is less than 3<br>' 
+  } else {
+     document.getElementById('myOut').innerHTML += 
+           'wow the number is greater than 3<br>' 
+  }
+ if ( document.getElementById('myIn').value == 3){
+         document.getElementById('myOut').innerHTML = 
+           'wow the number is 3<br>'}
+}">
+<div id="myOut">...</div><br><br><br>
 
 
-x = document.getElementById('myIn').value
-	if ( x == 3) {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is 3 <br>'
+<input id="myIn3" type=text value=24>
+<input type=button value="it will print based on how big your number is" onclick="{
+   document.getElementById('myOut3').innerHTML = ''
 
-	}else {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is is not 3<br>' } 
+for(let x=0; x < document.getElementById('myIn3').value; x++){
+if(document.getElementById('myIn3').value % 2 == 0){document.getElementById('myOut3').innerHTML += `Even, `
+} else{document.getElementById('myOut3').innerHTML += 
+           'Odd'
+}
+}
+}">
+<div id="myOut3">...</div><br><br><br>
 
+<input id="myIn1" type=text value=54>
+<input type=button value="Big number or small number?" onclick="{
+   document.getElementById('myOut1').innerHTML = ''
 
-x = document.getElementById('myIn').value
-	if ( x == 3) {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is 3 <br>'
-
-	}else {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is is not 3<br>' } 
-
-
-x = document.getElementById('myIn').value
-	if ( x == 3) {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is 3 <br>'
-
-	}else {
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is is not 3<br>' } 
+  if ( document.getElementById('myIn1').value < 100){
+      document.getElementById('myOut1').innerHTML += 
+           'less than 100<br>' 
+  } else {
+     document.getElementById('myOut1').innerHTML += 
+           'bigger than 100<br>' 
+  }
+ if ( document.getElementById('myIn1').value == 100){
+         document.getElementById('myOut1').innerHTML = 
+           '100<br>'}
+}">
+<div id="myOut1">...</div><br><br><br>
 
 
 
-
+<input id="myIn2" type=text value=777>
+<input type=button value="is it the special number im looking for?" onclick="{
+   document.getElementById('myOut2').innerHTML = ''
+x = document.getElementById('myIn2').value
+  if ( x == 777){
+      document.getElementById('myOut2').innerHTML += 
+           'This is a special number<br>' 
+  } else {
+     document.getElementById('myOut2').innerHTML += 
+           'This aint it<br>' 
+  }
 
 }">
-<div id="myOut">...</div>
+<div id="myOut2">...</div><br><br><br>
+
+

@@ -1,11 +1,7 @@
+<h3 align=center>Objects Again by Joseph</3>
 
 
-
-
-<h3 align=center>t1a15-objects-again-name.html</3>
-
-
-Store these Items in a Javascript object <br>
+<br>Store these Items in a Javascript object <br>
 
 <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
    "firstName": "John",
@@ -15,21 +11,89 @@ Store these Items in a Javascript object <br>
 }
 </textarea><br> 
     
-
-
 <input id="myButton128" type="button" value="Store as an object" onclick="{
       
     var myPerson = {}                                                              
     myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
                                                                          
     document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
-          myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
-                                                                                                                    
+          myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'                                                                                                                 
 }">
-
-
-
-
 <br><br>
+<div id='myDiv128'>...</div><br><br><br><br>
 
-<div id='myDiv128'>...</div><br>
+
+
+<textarea id="myTextAreaObject02" rows="8" cols="70" wrap="false">{
+   "firstName": "Mister",
+   "lastName": "Ellise",
+   "age": 27,
+   "job": "Teacher",
+   "gender": "Male",
+   "pet": "Python(heh)"
+}
+</textarea><br> 
+    
+<input id="myButton12802" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject02').value)   
+                                                                         
+    document.getElementById('myDiv12802').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+          myPerson.age  + ', Job: ' + myPerson.job + ', gender: ' + myPerson.gender +  ', Pet: ' + myPerson.pet + '<br>'                                                                                                             
+}">
+<br><br>
+<div id='myDiv12802'>...</div><br><br><br><br>
+
+
+
+<textarea id="myTextAreaObject01" rows="8" cols="70" wrap="false">{
+   "Drinks": "Pepsi",
+   "Lunch": "Turkey",
+   "People": "You and I",
+   "When": "Tonight"
+}
+</textarea><br> 
+    
+<input id="myButton12801" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject01').value)   
+                                                                         
+     document.getElementById('myDiv12801').innerHTML = 'Drinks: ' + myPerson.Drinks + ' , Lunch: '+ myPerson.Lunch + ', People: '  + 
+          myPerson.People  + ', When: ' + myPerson.When +  '<br>'                                                                                                          
+}">
+<br><br>
+<div id='myDiv12801'>...</div><br><br><br><br>
+
+
+
+
+
+<textarea id="myTextAreaObject044" rows="8" cols="70" wrap="false">{
+   "School": "MSS",
+   "Subjects": "Precalc",
+   "Teachers": "Mr.Macrimmon",
+   "Mark": "A..ish"
+}
+</textarea><br> 
+    
+<input id="myButton12803" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject044').value)   
+                                                                         
+     document.getElementById('myDiv12803').innerHTML = 'School: ' + myPerson.School + ' , Subjects: '+ myPerson.Subjects + ', Teachers: '  + 
+          myPerson.Teachers  + ', Mark: ' + myPerson.Mark +  '<br>'                                                                                                          
+}">
+<br><br>
+<div id='myDiv12803'>...</div><br><br><br><br>
+
+
+
+
+
+
+
+
+

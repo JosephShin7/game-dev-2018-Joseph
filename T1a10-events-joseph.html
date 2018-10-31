@@ -1,21 +1,54 @@
-<h2 align=center> Tons of Events by Joseph </h2>
-
-
-
- 
-<div id="myDiv01"	style="background:lightblue;width:300; height:202;" onDblClick="{
-	document.getElementById('myOutput01').innerHTML = 'You Double Clicked!' 
-}">Double Click this div</div>
-<div id="myOutput01"></div> <br> <br>
+<h2 align=center>Tons of Events by Joseph</h2>
 
 
 
 
 
-<input type=text value="Change me and Click elsewhere" onChange="{
-	document.getElementById('myOutput02').innerHTML = 
-	'You changed the text to: ' + this.value
-}">
+<div id="myDiv07" style="background:cyan ;width:200 ;height:200;" onmousemove=
+"{document.getElementById('myOutput07').innerHTML = event.clientX
+}">Number Corresponds to your position in the box</div>
+<div id="myOutput07">...</div><br><br><br>
 
-<div id="myOutput02"></div><br> <br>
+<div id="myDiv03" style="background:red ;width:100 ;height:100;" onDrag=
+"{document.getElementById('myOutput03').innerHTML = 'Nice work buddy'
+}">Drag</div>
+Drag and hold on it to move.
 
+<input type=button value="Reset" onclick="{document.getElementById('myOutput03').innerHTML = '...'}"> 
+<div id="myOutput03">...</div><br><br><br>
+
+<input type=text value="Select me:)" onSelect=
+"{document.getElementById('myOutput05').innerHTML = 'You selected the sentence'}">
+<div id="myOutput05">Select the Sentence</div><br><br><br>
+
+<input type=text value=" "onclick=
+"{document.getElementById('myOutput08').innerHTML = 'You Clicked me'}">
+<div id="myOutput08">Click on me</div><br><br><br>
+<br><br><br>
+
+
+<input type=text value="Put something on this box, and click elsewhere" onChange=
+"{document.getElementById('myOutput02').innerHTML = 'You changed the text to:' + this.value}">
+<div id="myOutput02">...</div><br><br><br>
+
+
+
+<div id="myDiv04" style="background:yellow ;width:100 ;height:40;" onmousewheel=
+"{document.getElementById('myOutput04').innerHTML = 'Nice work buddy'
+}">Rotate Your mousewheel</div>
+<input type=button value="Reset" onclick="{document.getElementById('myOutput04').innerHTML = '...'}">
+<div id="myOutput04">...</div>
+<br><br><br>
+
+
+
+<input type=text value=" " onfocus =
+"{document.getElementById('myOutput06').innerHTML = 'You focused on this'}">
+<div id="myOutput06">Focus on this Text Box</div><br><br><br>
+
+
+<div id="myDiv01" style="background:green ;width:200 ;height:200;" onDblClick=
+"{document.getElementById('myOutput01').innerHTML = 'Nice you double clicked'
+}">Dobble Click this </div>
+<input type=button value="Reset" onclick="{document.getElementById('myOutput01').innerHTML = '...'}">
+<div id="myOutput01">...</div>
