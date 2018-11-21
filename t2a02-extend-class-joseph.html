@@ -1,55 +1,13 @@
 
 
 <h2 align=center>Javascript Classes EXTENDED by Joseph</h2>
-<input type=text id="myNameInput" placeholder="Your Name" value="">
-<input type=text id="myNameInput2" placeholder="Your Age" value="">
-<input type=text id="myNameInput3" placeholder="Your Height" value="">
-<input type=text id="myNameInput4" placeholder="Your Phone Number" value="">
-<input type=text id="myNameInput5" placeholder="Your Social Security #" value="">
-<input type=text id="myNameInput6" placeholder="Your Address" value="">
-<input type=text id="myNameInput7" placeholder="Your Postal Code" value="">
-
-
-
-<input id="myButton1" type="button" value="My information" 
-onclick="{
-	class myAnimal {
-    constructor(passName, passAge ,passHeight ,passPhone ,passSSN ,passHouse ,passCode) {
-          this.myName =  passName;
-          this.myAge =   passAge;
-          this.myHeight =passHeight;
-	  this.myPhone = passPhone;
-	  this.mySSN =   passSSN;
- 	  this.myHouse = passHouse;
-	  this.myCode =  passCode;
-
-    }
-
-    myShow(){    
-       document.getElementById('myDiv1').innerHTML = ' Hi, I am '+ this.myName + '. I am ' + this.myAge + ' years old' + ' my height is ' + this.myHeight +'cm' + 
-' my Number is ' + 
-this.myPhone + ' my social security number is ' + this.mySSN + ' my house address is ' + this.myHouse + ' and my postal code is ' + this.myCode
- 
- } }  
-                                                             
-   
-                                                                                 
-   myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value , document.getElementById('myNameInput3').value
-,document.getElementById('myNameInput4').value,document.getElementById('myNameInput5').value,document.getElementById('myNameInput6').value,
-document.getElementById('myNameInput7').value)
-   myDog.myShow()      
-
-                                                 
-}"><br><br>
-
-
-<input type=text id="myNameInput" placeholder="Your Name" value="">
-<input type=text id="myNameInput2" placeholder="Your Age" value="">
-<input type=text id="myNameInput3" placeholder="Your Height" value="">
-<input type=text id="myNameInput4" placeholder="Your Phone Number" value="">
-<input type=text id="myNameInput5" placeholder="Your Social Security #" value="">
-<input type=text id="myNameInput6" placeholder="Your Address" value="">
-<input type=text id="myNameInput7" placeholder="Your Postal Code" value="">
+<input type=text id="myNameInput" placeholder="Your Name" value="Gene">
+<input type=text id="myNameInput2" placeholder="Your Age" value="35">
+<input type=text id="myNameInput3" placeholder="Your Height" value="175">
+<input type=text id="myNameInput4" placeholder="Your Phone Number" value="604-342-1111">
+<input type=text id="myNameInput5" placeholder="Your Social Security #" value="149271947">
+<input type=text id="myNameInput6" placeholder="Your Address" value="Mission Secondary">
+<input type=text id="myNameInput7" placeholder="Your Postal Code" value="v2v 6b2">
 
 
 
@@ -86,6 +44,65 @@ document.getElementById('myNameInput7').value)
 
 <div id='myDiv1'>Your information will be saved <strike> for blackmar.. </strike>for safety purposes</div><br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type=text id="NameInput" placeholder="Pet Name" value="Choco">
+<input type=text id="NameInput2" placeholder="Pet Age" value="13">
+<input type=text id="NameInput3" placeholder="Pet Height" value="20">
+<input type=text id="NameInput4" placeholder="Pet Fur Color" value="Red">
+<input type=text id="NameInput5" placeholder="Pet Weight" value="45lb">
+<input type=text id="NameInput6" placeholder="Pet Food" value="Canned Tuna">
+<input type=text id="NameInput7" placeholder="Pet Toys" value="Squiky">
+
+
+
+<input id="myButton2" type="button" value="My information" 
+onclick="{
+	class myAnimal {
+    constructor(passName, passAge ,passHeight ,passPhone ,passSSN ,passHouse ,passCode) {
+          this.myName =  passName;
+          this.myAge =   passAge;
+          this.myHeight =passHeight;
+	  this.myPhone = passPhone;
+	  this.mySSN =   passSSN;
+ 	  this.myHouse = passHouse;
+	  this.myCode =  passCode;
+
+    }
+
+    myShow(){    
+       document.getElementById('myDiv2').innerHTML = ' Your Pets name is '+ this.myName + ' and it seems like your pet is  ' + this.myAge + ' years old' + ' your pets height is ' + this.myHeight +'cm' + 
+' your pets fur color is ' + 
+this.myPhone + ' your pets weight ' + this.mySSN + ' your pets favourite food is ' + this.myHouse + ' your pets favourite toy is ' + this.myCode
+ 
+ } }  
+                                                             
+   
+                                                                                 
+   myCat = new myAnimal(document.getElementById('NameInput').value, document.getElementById('NameInput2').value , document.getElementById('NameInput3').value
+,document.getElementById('NameInput4').value,document.getElementById('NameInput5').value,document.getElementById('NameInput6').value,
+document.getElementById('NameInput7').value)
+   myCat.myShow()      
+
+                                                 
+}"><br><br>
+
+<div id='myDiv2'> Your pets info will be used for Emergency purposes. </div><br>
 
 
 
