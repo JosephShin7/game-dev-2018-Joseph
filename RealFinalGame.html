@@ -1,0 +1,91 @@
+
+var audio = new Audio('https://raw.githubusercontent.com/JosephShin7/game-dev-2018-Joseph/master/avengers-theme.mp3');
+audio.play();
+<script>
+
+
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+myStart = new Date().getTime()
+
+
+document.onkeydown = checkKey;
+
+function checkKey(myEvent) { 
+let myEnd = new Date().getTime()
+   let myDuration = Math.round((myEnd-myStart)/1000) 
+   document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
+', keyCode: '+myEvent.keyCode
+
+if (myDuration >= 60){alert('HumansWin!')}
+
+ if (myHitOther('myImage01','myImage02')){alert('uh...Fleet of Rocket Wins.')} 
+ if (myHitOther('myImage01','myImage02')){window.location.href = "file:///C:/Users/1224857/OneDrive%20-%20SCHOOL%20DIST%2075%20(MISSION)/Shin-Joseph-Game-Dev-2018/RealFinalGame2.html";}
+	
+if 		(myEvent.keyCode == 87){document.getElementById('myImage01').style.top = 
+		parseInt(document.getElementById('myImage01').style.top) - 13 + 'px'  //ALIEN
+		document.getElementById('myImage01').style.transform= 'rotate(360deg)'}
+
+if		 (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = 
+		parseInt(document.getElementById('myImage01').style.top) + 13 + 'px'  //Down arrow=40
+		document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
+
+if 		(myEvent.keyCode == 68){document.getElementById('myImage01').style.left = 
+		parseInt(document.getElementById('myImage01').style.left) + 13 + 'px'  //Right arrow =39
+		document.getElementById('myImage01').style.transform= 'rotate(90deg)'}
+
+if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left = 
+		parseInt(document.getElementById('myImage01').style.left) - 13 + 'px'  //Left arrow=38
+		document.getElementById('myImage01').style.transform= 'rotate(-90deg)'}
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myDiv01"></div>
+<img id="myImage01" width=50
+src="https://digitalwebrocket.com/wp-content/uploads/2017/08/animat-rocket-color.gif" 
+style="position:absolute; left:0px; top:0px; width:100px; height:100px">
+
+
+
+<div id="myDiv02"></div>
+<img id="myImage02" width=50
+src="https://images.vexels.com/media/users/3/145819/isolated/preview/486c34cf5b3b4badd52bc427dbeb44a1-rocket-cartoon-by-vexels.png" 
+style="position:absolute; left:200px; top:250px; width:100px; height:100px">
+
