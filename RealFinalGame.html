@@ -1,6 +1,4 @@
 
-var audio = new Audio('https://raw.githubusercontent.com/JosephShin7/game-dev-2018-Joseph/master/avengers-theme.mp3');
-audio.play();
 <script>
 
 
@@ -22,7 +20,10 @@ function myHitOther(my1,my2){
 }
 
 
+
+
 myStart = new Date().getTime()
+
 
 
 document.onkeydown = checkKey;
@@ -33,7 +34,7 @@ let myEnd = new Date().getTime()
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
 ', keyCode: '+myEvent.keyCode
 
-if (myDuration >= 60){alert('HumansWin!')}
+
 
  if (myHitOther('myImage01','myImage02')){alert('uh...Fleet of Rocket Wins.')} 
  if (myHitOther('myImage01','myImage02')){window.location.href = "file:///C:/Users/1224857/OneDrive%20-%20SCHOOL%20DIST%2075%20(MISSION)/Shin-Joseph-Game-Dev-2018/RealFinalGame2.html";}
@@ -55,6 +56,7 @@ if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left =
 		document.getElementById('myImage01').style.transform= 'rotate(-90deg)'}
 
 }
+
 
 </script>
 
