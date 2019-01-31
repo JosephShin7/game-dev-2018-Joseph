@@ -1,4 +1,6 @@
 
+<body id="myBody" style="background-repeat:on-repeat; background-size 100%; " background= "https://www.wallpapermaiden.com/image/2016/08/23/giant-dragon-sky-clouds-sunset-long-tail-fantasy-4774.jpg">
+
 <script>
 
 
@@ -31,28 +33,30 @@ document.onkeydown = checkKey;
 function checkKey(myEvent) { 
 let myEnd = new Date().getTime()
    let myDuration = Math.round((myEnd-myStart)/1000) 
-   document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
+ document.getElementById('myDiv01').innerHTML = ' seconds:  ' + myDuration +
 ', keyCode: '+myEvent.keyCode
 
 
+ if (myHitOther('myImage01','myImage02')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame.html";}
+ if (myHitOther('myImage01','myImage05')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame.html";}
 
- if (myHitOther('myImage01','myImage02')){alert('uh...Fleet of Rocket Wins.')} 
- if (myHitOther('myImage01','myImage02')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame2.html";}
+
+ if (myHitOther('myImage01','myImage03')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame2.html";}
 	
 if 		(myEvent.keyCode == 87){document.getElementById('myImage01').style.top = 
-		parseInt(document.getElementById('myImage01').style.top) - 13 + 'px'  //ALIEN
+		parseInt(document.getElementById('myImage01').style.top) - 16 + 'px'  //ALIEN
 		document.getElementById('myImage01').style.transform= 'rotate(360deg)'}
 
 if		 (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = 
-		parseInt(document.getElementById('myImage01').style.top) + 13 + 'px'  //Down arrow=40
+		parseInt(document.getElementById('myImage01').style.top) + 16 + 'px'  //Down arrow=40
 		document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
 
 if 		(myEvent.keyCode == 68){document.getElementById('myImage01').style.left = 
-		parseInt(document.getElementById('myImage01').style.left) + 13 + 'px'  //Right arrow =39
+		parseInt(document.getElementById('myImage01').style.left) + 16 + 'px'  //Right arrow =39
 		document.getElementById('myImage01').style.transform= 'rotate(90deg)'}
 
 if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left = 
-		parseInt(document.getElementById('myImage01').style.left) - 13 + 'px'  //Left arrow=38
+		parseInt(document.getElementById('myImage01').style.left) - 16 + 'px'  //Left arrow=38
 		document.getElementById('myImage01').style.transform= 'rotate(-90deg)'}
 
 }
@@ -66,28 +70,58 @@ if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left =
 
 
 
+<marquee style=" left:1200px; top:1200px; width:500px; height:500px;" scrollamount="140"
+<div id="myDiv02"></div>
+<img id="myImage02" width=50
+src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
+style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
+</marquee>
+
+
+<marquee style=" left:1800px; top:1200px; width:600px; height:200px;" scrollamount="140"
+<div id="myDiv02"></div>
+<img id="myImage05" width=50
+src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
+style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
+</marquee>
+
+
+<marquee style=" left:1800px; top:1200px; width:300px; height:400px;" scrollamount="140"
+<div id="myDiv06"></div>
+<img id="myImage06" width=50
+src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
+style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
+</marquee>
+
+
+<marquee style=" left:1800px; top:1200px; width:600px; height:200px;" scrollamount="140"
+<div id="myDiv07"></div>
+<img id="myImage07" width=50
+src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
+style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
+</marquee>
 
 
 
 
 
-
-
-
-
+	
 
 
 
 
 <div id="myDiv01"></div>
 <img id="myImage01" width=50
-src="https://digitalwebrocket.com/wp-content/uploads/2017/08/animat-rocket-color.gif" 
-style="position:absolute; left:0px; top:0px; width:100px; height:100px">
+src="http://www.stickpng.com/assets/images/580b57fbd9996e24bc43c04d.png" 
+style="position:absolute; left:200px; top:600px; width:100px; height:100px">
 
 
 
-<div id="myDiv02"></div>
-<img id="myImage02" width=50
-src="https://images.vexels.com/media/users/3/145819/isolated/preview/486c34cf5b3b4badd52bc427dbeb44a1-rocket-cartoon-by-vexels.png" 
-style="position:absolute; left:200px; top:250px; width:100px; height:100px">
+
+<div id="myDiv03"></div>
+<img id="myImage03" width=50
+src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d2/InfinityStones_Guidebook.png/revision/latest?cb=20180430015332" 
+style="position:absolute; left:1400px; top:100px; width:100px; height:100px">
+
+
 
