@@ -1,9 +1,6 @@
-
 <body id="myBody" style="background-repeat:on-repeat; background-size 100%; " background= "https://www.wallpapermaiden.com/image/2016/08/23/giant-dragon-sky-clouds-sunset-long-tail-fantasy-4774.jpg">
 
 <script>
-
-
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -20,48 +17,28 @@ function myHitOther(my1,my2){
        return true
    }
 }
-
-
-
-
 myStart = new Date().getTime()
-
-
-
 document.onkeydown = checkKey;
-
 function checkKey(myEvent) { 
 let myEnd = new Date().getTime()
    let myDuration = Math.round((myEnd-myStart)/1000) 
- document.getElementById('myDiv01').innerHTML = ' seconds:  ' + myDuration +
-', keyCode: '+myEvent.keyCode
-
-
- if (myHitOther('myImage01','myImage02')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame.html";}
- if (myHitOther('myImage01','myImage05')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame.html";}
-
-
- if (myHitOther('myImage01','myImage03')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame2.html";}
+ if (myHitOther('IronMan','Die01')){alert('YouDie!');}
+ if (myHitOther('IronMan','Die02')){alert('YouDie!');}
+ if (myHitOther('IronMan','Gem')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame2.html";}
 	
-if 		(myEvent.keyCode == 87){document.getElementById('myImage01').style.top = 
-		parseInt(document.getElementById('myImage01').style.top) - 16 + 'px'  //ALIEN
-		document.getElementById('myImage01').style.transform= 'rotate(360deg)'}
-
-if		 (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = 
-		parseInt(document.getElementById('myImage01').style.top) + 16 + 'px'  //Down arrow=40
-		document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
-
-if 		(myEvent.keyCode == 68){document.getElementById('myImage01').style.left = 
-		parseInt(document.getElementById('myImage01').style.left) + 16 + 'px'  //Right arrow =39
-		document.getElementById('myImage01').style.transform= 'rotate(90deg)'}
-
-if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left = 
-		parseInt(document.getElementById('myImage01').style.left) - 16 + 'px'  //Left arrow=38
-		document.getElementById('myImage01').style.transform= 'rotate(-90deg)'}
-
+if 		(myEvent.keyCode == 87){document.getElementById('IronMan').style.top = 
+		parseInt(document.getElementById('IronMan').style.top) - 16 + 'px'  //ALIEN
+		document.getElementById('IronMan').style.transform= 'rotate(360deg)'}
+if		 (myEvent.keyCode == 83){document.getElementById('IronMan').style.top = 
+		parseInt(document.getElementById('IronMan').style.top) + 16 + 'px'  //Down arrow=40
+		document.getElementById('IronMan').style.transform= 'rotate(180deg)'}
+if 		(myEvent.keyCode == 68){document.getElementById('IronMan').style.left = 
+		parseInt(document.getElementById('IronMan').style.left) + 16 + 'px'  //Right arrow =39
+		document.getElementById('IronMan').style.transform= 'rotate(90deg)'}
+if		 (myEvent.keyCode == 65){document.getElementById('IronMan').style.left = 
+		parseInt(document.getElementById('IronMan').style.left) - 16 + 'px'  //Left arrow=38
+		document.getElementById('IronMan').style.transform= 'rotate(-90deg)'}
 }
-
-
 </script>
 
 
@@ -69,59 +46,52 @@ if		 (myEvent.keyCode == 65){document.getElementById('myImage01').style.left =
 
 
 
+<marquee style="position:absolute; left:900px; top:100px; width:300px; height:500px;" scrollamount="70"; direction="up";
+<div id="myDiv01"></div>
+<img id="Hazard01" width=50
+src="http://www.clker.com/cliparts/z/X/S/G/1/e/black-bomb.svg"
+style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
+</marquee>
 
-<marquee style=" left:1200px; top:1200px; width:500px; height:500px;" scrollamount="140"
+
+<marquee style="position:absolute; left:-200px; top:200px; width:900px; height:500px;" scrollamount="90"
 <div id="myDiv02"></div>
-<img id="myImage02" width=50
+<img id="Hazard02" width=50
 src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
 style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
 </marquee>
 
 
-<marquee style=" left:1800px; top:1200px; width:600px; height:200px;" scrollamount="140"
-<div id="myDiv02"></div>
-<img id="myImage05" width=50
-src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
-style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
-</marquee>
-
-
-<marquee style=" left:1800px; top:1200px; width:300px; height:400px;" scrollamount="140"
-<div id="myDiv06"></div>
-<img id="myImage06" width=50
-src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
-style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
-</marquee>
-
-
-<marquee style=" left:1800px; top:1200px; width:600px; height:200px;" scrollamount="140"
-<div id="myDiv07"></div>
-<img id="myImage07" width=50
-src="https://www.willseye.org/wp-content/uploads/2017/04/Transparent-Gun-Shooting-Bullet-PNG_web.png"
-style="position:absolute;left:200px; top:100px; width:100px; height:100px ">
-</marquee>
-
-
-
-
-
-	
 
 
 
 
 <div id="myDiv01"></div>
-<img id="myImage01" width=50
+<img id="Die01" width=50
+src="https://invisible.io/wp-content/themes/invisible/assets/img/animation.png" 
+style="position:absolute; left:1100px; top:220px; width:80px; height:380px">
+
+
+
+<div id="myDiv01"></div>
+<img id="Die02" width=50
+src="https://invisible.io/wp-content/themes/invisible/assets/img/animation.png" 
+style="position:absolute; left:-100px; top:300px; width:800px; height:100px">
+
+
+
+
+
+
+
+
+<div id="myDiv01"></div>
+<img id="IronMan" width=50
 src="http://www.stickpng.com/assets/images/580b57fbd9996e24bc43c04d.png" 
-style="position:absolute; left:200px; top:600px; width:100px; height:100px">
-
-
+style="position:absolute; left:100px; top:500px; width:100px; height:100px">
 
 
 <div id="myDiv03"></div>
-<img id="myImage03" width=50
+<img id="Gem" width=50
 src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d2/InfinityStones_Guidebook.png/revision/latest?cb=20180430015332" 
 style="position:absolute; left:1400px; top:100px; width:100px; height:100px">
-
-
-
