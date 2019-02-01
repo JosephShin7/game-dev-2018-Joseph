@@ -22,10 +22,10 @@ document.onkeydown = checkKey;
 function checkKey(myEvent) { 
 let myEnd = new Date().getTime()
    let myDuration = Math.round((myEnd-myStart)/1000) 
- if (myHitOther('IronMan','Die01')){alert('YouDie!');}
- if (myHitOther('IronMan','Die02')){alert('YouDie!');}
- if (myHitOther('IronMan','Gem')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/RealFinalGame2.html";}
-	
+ if (myHitOther('IronMan','Die01')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/FinalGame";}
+ if (myHitOther('IronMan','Die02')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/FinalGame";}	
+ if (myHitOther('IronMan','Gem')){window.location.href = "https://josephshin7.github.io/game-dev-2018-Joseph/FinalGame2.html";}
+
 if 		(myEvent.keyCode == 87){document.getElementById('IronMan').style.top = 
 		parseInt(document.getElementById('IronMan').style.top) - 16 + 'px'  //ALIEN
 		document.getElementById('IronMan').style.transform= 'rotate(360deg)'}
